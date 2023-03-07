@@ -22,6 +22,14 @@ const RegistrationForm: React.FC = () => {
             <br/>
             <input className={classes['registration-form-input']} type="text" name="profile-name" placeholder="Enter a profile name." />
 
+            <h4 className={classes['registration-form-subtitle-h4']}>This appears on your profile.</h4>
+
+            <label className={classes['registration-form-input-label']} htmlFor="month">What&apos;s your date of birth?</label>
+            <br/>
+            <input className={`${classes['registration-form-input']} ${classes.month}`} type="select" name="month" placeholder="Month" />
+            <input className={`${classes['registration-form-input']} ${classes.month}`} type="select" name="month" placeholder="Month" />
+            <input className={`${classes['registration-form-input']} ${classes.month}`} type="select" name="month" placeholder="Month" />
+
         </div>
     )
 }

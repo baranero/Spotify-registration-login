@@ -19,7 +19,7 @@ const Registration: React.FC = () => {
                 <GoogleButton/>
                 <BreakLine/>
                 <RegistrationForm/>
-                <h4 className={classes['registration-subtitle-h4']}>This appears on your profile.</h4>
+                
             </div>
         </>
     )
