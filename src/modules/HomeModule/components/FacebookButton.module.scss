@@ -1,0 +1,22 @@
+.button-facebook {
+    margin-bottom: 18px;
+    button {
+        border: none;
+        background: #445A90;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+
+        .button-facebook-image__background {
+                background: #fff;
+                margin-right: 20px;
+                width: 27px;
+                height: 27px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+        }
+    }
+}
