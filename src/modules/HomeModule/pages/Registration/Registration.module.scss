@@ -1,0 +1,20 @@
+.registration {
+    text-align: center;
+
+    & &-title {
+        margin-top: 50px;
+        margin-bottom: 0;
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 32.4px;
+    }
+
+    & &-subtitle {
+        margin: 50px auto 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43.2px;
+        width: 432px;
+    }
+}
+
