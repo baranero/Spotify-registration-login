@@ -1,0 +1,25 @@
+.registration-form {
+    & &-subtitle-h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+        margin-bottom: 32px;
+    }
+
+    & &-input-label {
+        float: left;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+    }
+
+    & &-input {
+        width: 442px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin: 16px 0 16px;
+        padding: 20px 0 19px 32px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "./UI/Button"
+import Button from "../UI/Button"
 import classes from './FacebookButton.module.scss'
 
 const FacebookButton: React.FC = () => {

@@ -11,12 +11,21 @@
         line-height: 32.4px;
     }
 
-    & &-subtitle {
+    & &-subtitle-h2 {
         margin: 50px auto 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 43.2px;
         width: 432px;
     }
+
+    & &-subtitle-h4 {
+        text-align: left;
+        font-size: 14px;
+        line-height: 16.8px;
+        font-weight: 400;
+        margin: 0;
+    }
+
 }
 
