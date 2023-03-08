@@ -31,7 +31,7 @@ const RegistrationForm: React.FC = () => {
 
                 <div className={classes['registration-form-birth-input']}>
                     <label className={classes['registration-form-description']} htmlFor="month">Month</label>
-                    <input className={`${classes['registration-form-input']} ${classes.month}`}  type='text' name="month" list="month" />
+                    <input className={`${classes['registration-form-input']} ${classes.month}`}  type='text' name="month" list="month" placeholder="Month" />
                     <datalist id="month" >
                         <option value='January'/>
                         <option value='February'/>
@@ -65,18 +65,22 @@ const RegistrationForm: React.FC = () => {
             <div className={classes['registration-form-gender']}>
 
                 <label className={classes['registration-form-input-label']}>What&apos;s your gender?</label>
-                <div className={classes['registration-form-gender-input']}>
+                <div className={classes['registration-form-gender-container']}>
                     
-                    <input type='checkbox' id="male" name="male" value='Male'/>
-                    <label htmlFor="male">Male</label>
-                    <input type='checkbox' id="female" name="female" value='Female'/>
-                    <label htmlFor="female">Female</label>
-                    <input type='checkbox' id="non-binary" name="non-binary" value='Non-binary'/>
-                    <label htmlFor="non-binary">Non-binary</label>
-                    <input type='checkbox' id="other" name="other" value='Other'/>
-                    <label htmlFor="other">Other</label>
-                    <input type='checkbox' id="not-to-say" name="not-to-say" value='Prefer not to say'/>
-                    <label htmlFor="not-to-say">Prefer not to say</label>
+                    <input className={classes['registration-form-gender-input']} type='radio' id="male" name="male" value='Male'/>
+                    <label className={classes['registration-form-gender-label']} htmlFor="male">Male</label>
+
+                    <input className={classes['registration-form-gender-input']} type='radio' id="female" name="female" value='Female'/>
+                    <label className={classes['registration-form-gender-label']}  htmlFor="female">Female</label>
+
+                    <input className={classes['registration-form-gender-input']} type='radio' id="non-binary" name="non-binary" value='Non-binary'/>
+                    <label className={classes['registration-form-gender-label']}  htmlFor="non-binary">Non-binary</label>
+
+                    <input className={classes['registration-form-gender-input']} type='radio' id="other" name="other" value='Other'/>
+                    <label className={classes['registration-form-gender-label']}  htmlFor="other">Other</label>
+
+                    <input className={classes['registration-form-gender-input']} type='radio' id="not-to-say" name="not-to-say" value='Prefer not to say'/>
+                    <label className={classes['registration-form-gender-label']}  htmlFor="not-to-say">Prefer not to say</label>
                 </div>
 
             </div>

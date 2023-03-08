@@ -71,10 +71,26 @@
         text-align: left;
     }
 
-    & &-gender-input {
+    & &-gender-container {
         display: flex;
-        word-wrap: break-word;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    & &-gender-input {
+        margin-right: 18px;
+        margin-bottom: 18px;
+        width: 20px;
+        height: 20px;
+    }
+
+    & &-gender-label {
+        text-align: left;
+        font-size: 14px;
+        line-height: 16.8px;
+        font-weight: 400;
+        margin-bottom: 18px;
+        margin-right: 24px;
     }
 
 }
