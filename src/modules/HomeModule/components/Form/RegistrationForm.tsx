@@ -22,13 +22,65 @@ const RegistrationForm: React.FC = () => {
             <br/>
             <input className={classes['registration-form-input']} type="text" name="profile-name" placeholder="Enter a profile name." />
 
-            <h4 className={classes['registration-form-subtitle-h4']}>This appears on your profile.</h4>
+            <p className={classes['registration-form-description']}>This appears on your profile.</p>
 
-            <label className={classes['registration-form-input-label']} htmlFor="month">What&apos;s your date of birth?</label>
-            <br/>
-            <input className={`${classes['registration-form-input']} ${classes.month}`} type="select" name="month" placeholder="Month" />
-            <input className={`${classes['registration-form-input']} ${classes.month}`} type="select" name="month" placeholder="Month" />
-            <input className={`${classes['registration-form-input']} ${classes.month}`} type="select" name="month" placeholder="Month" />
+
+            <label className={classes['registration-form-input-label']} >What&apos;s your date of birth</label>
+
+            <div className={classes['registration-form-birth']}>
+
+                <div className={classes['registration-form-birth-input']}>
+                    <label className={classes['registration-form-description']} htmlFor="month">Month</label>
+                    <input className={`${classes['registration-form-input']} ${classes.month}`}  type='text' name="month" list="month" />
+                    <datalist id="month" >
+                        <option value='January'/>
+                        <option value='February'/>
+                        <option value="March"/>
+                        <option value="April"/>
+                        <option value="May"/>
+                        <option value="June"/>
+                        <option value="July"/>
+                        <option value="August"/>
+                        <option value="September"/>
+                        <option value="October"/>
+                        <option value="November"/>
+                        <option value="December"/>
+                    </datalist>
+                </div>
+
+                <div className={classes['registration-form-birth-input']}>
+                    <label className={classes['registration-form-description']} htmlFor="month">Day</label>
+                    <input className={`${classes['registration-form-input']} ${classes.year}`} type="select" name="month" placeholder="DD" />
+                </div>
+
+                <div className={classes['registration-form-birth-input']}>
+                    <label className={classes['registration-form-description']} htmlFor="month">Year</label>
+                    <input className={`${classes['registration-form-input']} ${classes.day}`} type="select" name="month" placeholder="YYY" />
+                </div>
+
+            </div>
+
+
+
+            <div className={classes['registration-form-gender']}>
+
+                <label className={classes['registration-form-input-label']}>What&apos;s your gender?</label>
+                <div className={classes['registration-form-gender-input']}>
+                    
+                    <input type='checkbox' id="male" name="male" value='Male'/>
+                    <label htmlFor="male">Male</label>
+                    <input type='checkbox' id="female" name="female" value='Female'/>
+                    <label htmlFor="female">Female</label>
+                    <input type='checkbox' id="non-binary" name="non-binary" value='Non-binary'/>
+                    <label htmlFor="non-binary">Non-binary</label>
+                    <input type='checkbox' id="other" name="other" value='Other'/>
+                    <label htmlFor="other">Other</label>
+                    <input type='checkbox' id="not-to-say" name="not-to-say" value='Prefer not to say'/>
+                    <label htmlFor="not-to-say">Prefer not to say</label>
+                </div>
+
+            </div>
+            
 
         </div>
     )
