@@ -19,6 +19,7 @@ const Registration: React.FC = () => {
                 <GoogleButton/>
                 <BreakLine/>
                 <RegistrationForm/>
+
                 
             </div>
         </>

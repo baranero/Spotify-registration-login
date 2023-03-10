@@ -1,4 +1,6 @@
 import React from "react";
+import SignupButton from "../Button/SignupButton";
+import Button from "../UI/Button";
 import classes from './RegistrationForm.module.scss'
 
 const RegistrationForm: React.FC = () => {
@@ -84,8 +86,21 @@ const RegistrationForm: React.FC = () => {
                 </div>
 
             </div>
-            
 
+            <div className={classes['registration-form-marketing']}>
+                <input className={classes['registration-form-marketing-input']} type='checkbox' id="male" name="male" value='Male'/>
+                <label className={classes['registration-form-marketing-label']} htmlFor="male">Share my registration date with Spotify&apos;s content providers for marketing purposes.</label>
+                
+            </div>
+
+            <p className={classes['registration-form-terms']}>By clicking on sing-up. you agree to Sporify&apos;s <a href="#">Terms and Conditions of Use</a>.</p>
+
+            <p className={classes['registration-form-terms']}>To learn more about how. Spotify collects, uses, shares and protects your
+            personal data, please see <a href="#">Spotify&apos;s Privacy Policy</a>.</p>
+
+            <SignupButton/>
+
+            <p className={classes['registration-form-login']}>Have an account? <a href="#">Log in</a>.</p>
         </div>
     )
 }
