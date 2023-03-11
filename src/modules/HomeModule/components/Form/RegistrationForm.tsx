@@ -1,12 +1,21 @@
 import React from "react";
 import SignupButton from "../Button/SignupButton";
+import Input, { InputProps } from "../Input/Input";
 import Button from "../UI/Button";
 import classes from './RegistrationForm.module.scss'
 
-const RegistrationForm: React.FC = () => {
+const RegistrationForm: React.FC<{ input: InputProps }> = ({ input }) => {
+
     return (
         <div className={classes['registration-form']}>
             <h3 className={classes['registration-form-subtitle-h3']}>Sign up with your email address</h3>
+
+            <Input
+                name="email"
+                label="What&apos;s your email?"
+                type="email"
+                placeholder="Enter your email."
+            />
 
             <label className={classes['registration-form-input-label']} htmlFor="email">What&apos;s your email?</label>
             <br/>
