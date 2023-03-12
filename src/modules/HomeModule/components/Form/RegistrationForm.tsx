@@ -17,21 +17,26 @@ const RegistrationForm: React.FC<{ input: InputProps }> = ({ input }) => {
                 placeholder="Enter your email."
             />
 
-            <label className={classes['registration-form-input-label']} htmlFor="email">What&apos;s your email?</label>
-            <br/>
-            <input className={classes['registration-form-input']} type="email" name="email" placeholder="Enter your email." />
+            <Input
+                name="confirm-email"
+                label="Confirm your email"
+                type="email"
+                placeholder="Enter your email again."
+            />
 
-            <label className={classes['registration-form-input-label']} htmlFor="email">Confirm your email</label>
-            <br/>
-            <input className={classes['registration-form-input']} type="confirm-email" name="email" placeholder="Enter your email again." />
+            <Input
+                name="password"
+                label="Create a password"
+                type="password"
+                placeholder="Create a password"
+            />
 
-            <label className={classes['registration-form-input-label']} htmlFor="password">Create a password</label>
-            <br/>
-            <input className={classes['registration-form-input']} type="password" name="password" placeholder="Create a password" />
-
-            <label className={classes['registration-form-input-label']} htmlFor="profile-name">What should we call you?</label>
-            <br/>
-            <input className={classes['registration-form-input']} type="text" name="profile-name" placeholder="Enter a profile name." />
+            <Input
+                name="profile-name"
+                label="What should we call you?"
+                type="text"
+                placeholder="Enter a profile name."
+            />
 
             <p className={classes['registration-form-description']}>This appears on your profile.</p>
 
